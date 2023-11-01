@@ -16,3 +16,8 @@ def transcribe_sequence(sequence: str):
     transcribed_sequence = initial_sequence.transcribe()
     return { str(transcribed_sequence) }
 
+@app.get("/translate/{sequence}")
+def translate_sequence(sequence: str):
+    initial_sequence = Seq(sequence)
+    translated_sequence = initial_sequence.translate()
+    return { str(translated_sequence) }
