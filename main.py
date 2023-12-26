@@ -4,20 +4,29 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.get("/complement/{sequence}")
+# Get a Complementary Sequence
+@app.get("/complementary-sequence/{sequence}")
 def complement_sequence(sequence: str):
     initial_sequence = Seq(sequence)
     complementary_sequence = initial_sequence.complement()
-    return { str(complementary_sequence) }
+    return { 
+        "sequence": str(complementary_sequence) 
+        }
 
-@app.get("/transcribe/{sequence}")
+# Get a Transcribed Sequence
+@app.get("/transcribed-sequence/{sequence}")
 def transcribe_sequence(sequence: str):
     initial_sequence = Seq(sequence)
     transcribed_sequence = initial_sequence.transcribe()
-    return { str(transcribed_sequence) }
+    return { 
+        "sequence": str(transcribed_sequence)
+        }
 
-@app.get("/translate/{sequence}")
+# Get a Translated Sequence
+@app.get("/translated-sequence/{sequence}")
 def translate_sequence(sequence: str):
     initial_sequence = Seq(sequence)
     translated_sequence = initial_sequence.translate()
-    return { str(translated_sequence) }
+    return {
+        "sequence": str(translated_sequence)
+        }
