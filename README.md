@@ -7,7 +7,7 @@ BioSeq API uses [Biopython](https://biopython.org/) to handle nucleotide sequenc
 ### Complementary Sequence
 <details>
 
-<summary><code>GET</code> <code><strong>/complementary_sequence/{input_sequence}</b></strong></summary>
+<summary><code>GET</code> <code><strong>/complementary_sequence/{input_sequence}</strong></code></summary>
 
 Accepts a nucleotide sequence and returns a complementary nucleotide sequence.
 
@@ -39,7 +39,7 @@ Accepts a nucleotide sequence and returns a complementary nucleotide sequence.
 ### Reverse Complementary Sequence
 
 <details>
-<summary><code>GET</code> <code><strong>/reverse_complementary_sequence/{input_sequence}</b></strong></summary>
+<summary><code>GET</code> <code><strong>/reverse_complementary_sequence/{input_sequence}</strong></code></summary>
 
 Accepts a nucleotide sequence and returns a reverse complementary nucleotide sequence.
 
@@ -71,7 +71,7 @@ Accepts a nucleotide sequence and returns a reverse complementary nucleotide seq
 ### Transcribed Sequence
 
 <details>
-<summary><code>GET</code> <code><strong>/transcribed_sequence/{input_sequence}</b></strong></summary>
+<summary><code>GET</code> <code><strong>/transcribed_sequence/{input_sequence}</strong></code></summary>
 
 Accepts a DNA sequence and returns a transcribed RNA sequence.
 
@@ -103,7 +103,7 @@ Accepts a DNA sequence and returns a transcribed RNA sequence.
 ### Back-Transcribed Sequence
 
 <details>
-<summary><code>GET</code> <code><strong>/back_transcribed_sequence/{input_sequence}</b></strong></summary>
+<summary><code>GET</code> <code><strong>/back_transcribed_sequence/{input_sequence}</strong></code></summary>
 
 Accepts an RNA sequence and returns a back-transcribed DNA sequence.
 
@@ -135,7 +135,7 @@ Accepts an RNA sequence and returns a back-transcribed DNA sequence.
 ### Translated Sequence
 
 <details>
-<summary><code>GET</code> <code><strong>/translated_sequence/{input_sequence}</b></strong></summary>
+<summary><code>GET</code> <code><strong>/translated_sequence/{input_sequence}</strong></code></summary>
 
 Accepts a nucleotide sequence and returns a translated protein sequence.
 
@@ -162,4 +162,5 @@ Accepts a nucleotide sequence and returns a translated protein sequence.
 > | Object   |  Type      | Data type      | Description                                          |
 > |--------|------------|----------------|------------------------------------------------------|
 > | `output_sequence` |  Required  | String     | Protein sequence                  |
+
 </details>
