@@ -15,7 +15,7 @@ Accepts a nucleotide sequence and returns a complementary nucleotide sequence.
 
 > | Name   |  Type      | Data type      | Description                                          |
 > |--------|------------|----------------|------------------------------------------------------|
-> | `input_sequence` |  Required  | String     | Nucleotide sequence                  |
+> | `input_sequence` |  Required  | String     | Nucleotide sequence to complement              |
 
 #### Example request
 > ```js
@@ -33,7 +33,7 @@ Accepts a nucleotide sequence and returns a complementary nucleotide sequence.
 
 > | Object   |  Type      | Data type      | Description                                          |
 > |--------|------------|----------------|------------------------------------------------------|
-> | `output_sequence` |  Required  | String     | Nucleotide sequence                  |
+> | `output_sequence` |  Required  | String     | Complementary nucleotide sequence       |
 </details>
 
 ### Reverse Complementary Sequence
@@ -47,7 +47,7 @@ Accepts a nucleotide sequence and returns a reverse complementary nucleotide seq
 
 > | Name   |  Type      | Data type      | Description                                          |
 > |--------|------------|----------------|------------------------------------------------------|
-> | `input_sequence` |  Required  | String     | Nucleotide sequence                  |
+> | `input_sequence` |  Required  | String     | Nucleotide sequence to reverse-complement      |
 
 #### Example request
 > ```js
@@ -65,7 +65,7 @@ Accepts a nucleotide sequence and returns a reverse complementary nucleotide seq
 
 > | Object   |  Type      | Data type      | Description                                          |
 > |--------|------------|----------------|------------------------------------------------------|
-> | `output_sequence` |  Required  | String     | Nucleotide sequence                  |
+> | `output_sequence` |  Required  | String     | Reverse complementary nucleotide sequence      |
 </details>
 
 ### Transcribed Sequence
@@ -79,7 +79,7 @@ Accepts a DNA sequence and returns a transcribed RNA sequence.
 
 > | Name   |  Type      | Data type      | Description                                          |
 > |--------|------------|----------------|------------------------------------------------------|
-> | `input_sequence` |  Required  | String     | DNA sequence                  |
+> | `input_sequence` |  Required  | String     | DNA sequence to transcribe     |
 
 #### Example request
 > ```js
@@ -97,7 +97,7 @@ Accepts a DNA sequence and returns a transcribed RNA sequence.
 
 > | Object   |  Type      | Data type      | Description                                          |
 > |--------|------------|----------------|------------------------------------------------------|
-> | `output_sequence` |  Required  | String     | RNA sequence                  |
+> | `output_sequence` |  Required  | String     | Transcribed RNA sequence                 |
 </details>
 
 ### Back-Transcribed Sequence
@@ -111,7 +111,7 @@ Accepts an RNA sequence and returns a back-transcribed DNA sequence.
 
 > | Name   |  Type      | Data type      | Description                                          |
 > |--------|------------|----------------|------------------------------------------------------|
-> | `input_sequence` |  Required  | String     | RNA sequence                  |
+> | `input_sequence` |  Required  | String     | RNA sequence to back-transcribe                |
 
 #### Example request
 > ```js
@@ -129,7 +129,7 @@ Accepts an RNA sequence and returns a back-transcribed DNA sequence.
 
 > | Object   |  Type      | Data type      | Description                                          |
 > |--------|------------|----------------|------------------------------------------------------|
-> | `output_sequence` |  Required  | String     | DNA sequence                  |
+> | `output_sequence` |  Required  | String     | Back-transcribed DNA sequence            |
 </details>
 
 ### Translated Sequence
@@ -143,7 +143,7 @@ Accepts a nucleotide sequence and returns a translated protein sequence.
 
 > | Name   |  Type      | Data type      | Description                                          |
 > |--------|------------|----------------|------------------------------------------------------|
-> | `input_sequence` |  Required  | String     | Nucleotide sequence                  |
+> | `input_sequence` |  Required  | String     | Nucleotide sequence to translate          |
 
 #### Example request
 > ```js
@@ -161,6 +161,6 @@ Accepts a nucleotide sequence and returns a translated protein sequence.
 
 > | Object   |  Type      | Data type      | Description                                          |
 > |--------|------------|----------------|------------------------------------------------------|
-> | `output_sequence` |  Required  | String     | Protein sequence                  |
+> | `output_sequence` |  Required  | String     | Translated protein sequence        |
 
 </details>
