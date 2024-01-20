@@ -19,7 +19,7 @@ Accepts a nucleotide sequence and returns a complementary nucleotide sequence.
 
 #### Example request
 > ```js
->  curl -X GET "http://bioseq.onrender.com/complementary_sequence/AGCCCTCCAGGACAGGCTGCATCAGAAGAGGCCATCAAG"
+>  curl -X GET "https://bioseq.xyz/complementary_sequence/AGCCCTCCAGGACAGGCTGCATCAGAAGAGGCCATCAAG"
 > ```
 
 #### Example response
@@ -51,7 +51,7 @@ Accepts a nucleotide sequence and returns a reverse complementary nucleotide seq
 
 #### Example request
 > ```js
->  curl -X GET "http://bioseq.onrender.com/reverse_complementary_sequence/AGCCCTCCAGGACAGGCTGCATCAGAAGAGGCCATCAAG"
+>  curl -X GET "https://bioseq.xyz/reverse_complementary_sequence/AGCCCTCCAGGACAGGCTGCATCAGAAGAGGCCATCAAG"
 > ```
 
 #### Example response
@@ -83,7 +83,7 @@ Accepts a DNA sequence and returns a transcribed RNA sequence.
 
 #### Example request
 > ```js
->  curl -X GET "http://bioseq.onrender.com/transcribed_sequence/AGCCCTCCAGGACAGGCTGCATCAGAAGAGGCCATCAAG"
+>  curl -X GET "https://bioseq.xyz/transcribed_sequence/AGCCCTCCAGGACAGGCTGCATCAGAAGAGGCCATCAAG"
 > ```
 
 #### Example response
@@ -115,7 +115,7 @@ Accepts an RNA sequence and returns a back-transcribed DNA sequence.
 
 #### Example request
 > ```js
->  curl -X GET "http://bioseq.onrender.com/back_transcribed_sequence/AGCCCUCCAGGACAGGCUGCAUCAGAAGAGGCCAUCAAG"
+>  curl -X GET "https://bioseq.xyz/back_transcribed_sequence/AGCCCUCCAGGACAGGCUGCAUCAGAAGAGGCCAUCAAG"
 > ```
 
 #### Example response
@@ -147,7 +147,7 @@ Accepts a nucleotide sequence and returns a translated protein sequence.
 
 #### Example request
 > ```js
->  curl -X GET "http://bioseq.onrender.com/translated_sequence/AGCCCTCCAGGACAGGCTGCATCAGAAGAGGCCATCAAG"
+>  curl -X GET "https://bioseq.xyz/translated_sequence/AGCCCTCCAGGACAGGCTGCATCAGAAGAGGCCATCAAG"
 > ```
 
 #### Example response
