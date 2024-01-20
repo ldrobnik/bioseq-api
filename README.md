@@ -1,58 +1,56 @@
 # BioSeq API
 
-BioSeq API uses [Biopython](https://biopython.org/) to [complement](#complement-a-sequence), [transcribe](#transcribe-a-sequence), and [translate](#translate-a-sequence) nucleotide sequences.
+BioSeq API uses [Biopython](https://biopython.org/) to [complement](#complementary-sequence), [transcribe](#transcribed-sequence), and [translate](#translated-sequence) nucleotide sequences.
 
 ## Endpoints
 
-BioSeq API provides three endpoints using the `GET` method.
-
-### Complement a Sequence
-This endpoint returns a [complementary](https://en.wikipedia.org/wiki/Complementary_sequences) nucleotide sequence based on a nucleotide sequence.
+### Complementary Sequence
+Returns a [complementary](https://en.wikipedia.org/wiki/Complementary_sequences) nucleotide sequence based on a nucleotide sequence.
 
 #### Request syntax
 ```
-https://bioseq.onrender.com/complement/{sequence}
+https://bioseq.onrender.com/complementary_sequence/{input_sequence}
 ```
 #### Example request
-> https://bioseq.onrender.com/complement/agccctccaggacaggctgcatcagaagaggccatcaag
+> https://bioseq.onrender.com/complementary_sequence/agccctccaggacaggctgcatcagaagaggccatcaag
 
 #### Example response
 ```json
 {
-    "sequence": "tcgggaggtcctgtccgacgtagtcttctccggtagttc"
+    "output_sequence": "tcgggaggtcctgtccgacgtagtcttctccggtagttc"
 }
 ```
 
-### Transcribe a Sequence
-This endpoint returns a [transcribed](https://en.wikipedia.org/wiki/Transcription_(biology)) RNA sequence based on a nucleotide sequence.
+### Transcribd Sequence
+Returns a [transcribed](https://en.wikipedia.org/wiki/Transcription_(biology)) RNA sequence based on a nucleotide sequence.
 
 #### Request syntax
 ```
-https://bioseq.onrender.com/transcribe/{sequence}
+https://bioseq.onrender.com/transcribed_sequence/{input_sequence}
 ```
 #### Example request
-> https://bioseq.onrender.com/transcribe/agccctccaggacaggctgcatcagaagaggccatcaag
+> https://bioseq.onrender.com/transcribed_sequence/agccctccaggacaggctgcatcagaagaggccatcaag
 
 #### Example response
 ```json
 {
-    "sequence": "agcccuccaggacaggcugcaucagaagaggccaucaag"
+    "output_sequence": "agcccuccaggacaggcugcaucagaagaggccaucaag"
 }
 ```
 
-### Translate a Sequence
+### Translated Sequence
 This endpoint returns a [translated](https://en.wikipedia.org/wiki/Translation_(biology)) amino acid sequence based on a nucleotide sequence.
 
 #### Request syntax
 ```
-https://bioseq.onrender.com/translate/{sequence}
+https://bioseq.onrender.com/translated_sequence/{input_sequence}
 ```
 #### Example request
-> https://bioseq.onrender.com/translate/agccctccaggacaggctgcatcagaagaggccatcaag
+> https://bioseq.onrender.com/translated_sequence/agccctccaggacaggctgcatcagaagaggccatcaag
 
 #### Example response
 ```json
 {
-    "sequence": "SPPGQAASEEAIK"
+    "output_sequence": "SPPGQAASEEAIK"
 }
 ```
