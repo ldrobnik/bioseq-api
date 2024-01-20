@@ -21,7 +21,7 @@ https://bioseq.onrender.com/complementary_sequence/{input_sequence}
 }
 ```
 
-### Transcribd Sequence
+### Transcribed Sequence
 Returns a [transcribed](https://en.wikipedia.org/wiki/Transcription_(biology)) RNA sequence based on a nucleotide sequence.
 
 #### Request syntax
