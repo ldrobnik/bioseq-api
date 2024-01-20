@@ -1,11 +1,11 @@
 # BioSeq API
 
-BioSeq API uses [Biopython](https://biopython.org/) to [complement](#complementary-sequence), [transcribe](#transcribed-sequence), and [translate](#translated-sequence) nucleotide sequences.
+BioSeq API uses [Biopython](https://biopython.org/) to handle nucleotide sequences.
 
 ## Endpoints
 
 ### Complementary Sequence
-Returns a [complementary](https://en.wikipedia.org/wiki/Complementary_sequences) nucleotide sequence based on a nucleotide sequence.
+Accepts a nucleotide sequence and returns a complementary nucleotide sequence.
 
 #### Request syntax
 ```
@@ -21,8 +21,25 @@ https://bioseq.onrender.com/complementary_sequence/{input_sequence}
 }
 ```
 
+### Reverse Complementary Sequence
+Accepts a nucleotide sequence and returns a reverse complementary nucleotide sequence.
+
+#### Request syntax
+```
+https://bioseq.onrender.com/reverse_complementary_sequence/{input_sequence}
+```
+#### Example request
+> https://bioseq.onrender.com/reverse_complementary_sequence/agccctccaggacaggctgcatcagaagaggccatcaag
+
+#### Example response
+```json
+{
+    "output_sequence": "cttgatggcctcttctgatgcagcctgtcctggagggct"
+}
+```
+
 ### Transcribed Sequence
-Returns a [transcribed](https://en.wikipedia.org/wiki/Transcription_(biology)) RNA sequence based on a nucleotide sequence.
+Accepts a nucleotide sequence and returns a transcribed nucleotide sequence.
 
 #### Request syntax
 ```
@@ -38,8 +55,25 @@ https://bioseq.onrender.com/transcribed_sequence/{input_sequence}
 }
 ```
 
+### Back-Transcribed Sequence
+Accepts a nucleotide sequence and returns a back-transcribed nucleotide sequence.
+
+#### Request syntax
+```
+https://bioseq.onrender.com/back_transcribed_sequence/{input_sequence}
+```
+#### Example request
+> https://bioseq.onrender.com/back_transcribed_sequence/agcccuccaggacaggcugcaucagaagaggccaucaag
+
+#### Example response
+```json
+{
+    "output_sequence": "agccctccaggacaggctgcatcagaagaggccatcaag"
+}
+```
+
 ### Translated Sequence
-This endpoint returns a [translated](https://en.wikipedia.org/wiki/Translation_(biology)) amino acid sequence based on a nucleotide sequence.
+Accepts a nucleotide sequence and returns a translated amino acid sequence.
 
 #### Request syntax
 ```
