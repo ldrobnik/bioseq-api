@@ -1,6 +1,6 @@
 # BioSeq API
 
-BioSeq API uses [Biopython](https://biopython.org/) to handle nucleotide sequences. (Work in progress.)
+BioSeq API uses [Biopython](https://biopython.org/) to handle nucleotide sequences.
 
 ## Endpoints
 
